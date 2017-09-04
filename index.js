@@ -20,9 +20,7 @@ function deepestChild(){
     var child = current.querySelector('div');
     if(child){
       current = child;
-    } else{
-      return current;
     }
   }
-  return null;
+  return current;
 }
