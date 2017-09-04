@@ -12,3 +12,16 @@ function increaseRankBy(n){
     ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + parseInt(n);
   }
 }
+
+function deepestChild(){
+  var divs = document.querySelector('#grand-node');
+  var current = divs.querySelector('div');
+  while(current){
+    var child = current.querySelector('div');
+    if(child){
+      current = child;
+    } else{
+      return current;
+    }
+  }
+}
