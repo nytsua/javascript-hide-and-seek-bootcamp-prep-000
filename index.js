@@ -23,6 +23,7 @@ function deepestChild(){
       current = child;
     } else{
       toReturn = current;
+      current = undefined;
     }
   }
   return toReturn;
