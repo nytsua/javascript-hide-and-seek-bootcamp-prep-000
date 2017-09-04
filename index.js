@@ -24,4 +24,5 @@ function deepestChild(){
       return current;
     }
   }
+  return null;
 }
