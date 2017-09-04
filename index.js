@@ -18,10 +18,10 @@ function deepestChild(){
   var toReturn;
   while(current){
     var child = current.querySelector('div');
-    current = child ? child : undefined;
     if(!child){
         toReturn = current;
     }
+    current = child ? child : undefined;
   }
   return toReturn;
 }
