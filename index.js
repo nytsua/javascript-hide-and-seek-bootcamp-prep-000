@@ -18,7 +18,7 @@ function deepestChild(){
   var toReturn;
   while(current){
     var child = current.querySelector('div');
-    current = child ? current : undefined;
+    current = child ? child : undefined;
     if(!child){
         toReturn = current;
     }
